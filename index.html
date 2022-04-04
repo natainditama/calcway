@@ -2,12 +2,332 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
+    />
+    <script type="module" src="/src/main.ts" defer></script>
+    <title>Calcway - Modern Calculator App by natainditama</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+
+  <body class="bg-[#fcfcfc] text-slate-800">
+    <main
+      class="relative mx-auto block h-screen max-w-4xl py-12 px-6 2xl:grid 2xl:place-items-center"
+    >
+      <div
+        class="grid h-full grid-cols-1 grid-rows-2 gap-8 sm:grid-cols-2 sm:grid-rows-1 2xl:max-h-[615px]"
+      >
+        <section
+          class="flex h-full w-full flex-1 flex-col border-b-2 md:border-0"
+        >
+          <article class="flex flex-1 flex-col bg-red-100">
+            <div
+              data-previous-operand
+              class="flex h-1/2 w-full bg-red-500"
+            ></div>
+            <div data-current-operand></div>
+          </article>
+          <article
+            class="col-span-4 row-span-1 flex w-full flex-row py-4 md:hidden"
+          >
+            <main class="grid h-full w-full grid-cols-5 grid-rows-1">
+              <div class="flex items-center justify-center text-xl">
+                <button
+                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+                  data-tooltip="History"
+                >
+                  <span class="duration-400 grid place-items-center">
+                    <i class="fa-regular fa-clock"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="flex items-center justify-center text-xl">
+                <button
+                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+                  data-tooltip="Unite Converter"
+                >
+                  <span class="duration-400 grid place-items-center">
+                    <i class="fa-regular fa-ruler-horizontal"></i>
+                  </span>
+                </button>
+              </div>
+              <div></div>
+              <div></div>
+              <div class="flex items-center justify-center text-xl">
+                <button
+                  data-delete
+                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+                  data-tooltip="Delete"
+                >
+                  <span class="duration-400 grid place-items-center">
+                    <i class="fa-regular fa-delete-left"></i>
+                  </span>
+                </button>
+              </div>
+            </main>
+          </article>
+        </section>
+        <section
+          class="md:grid-rows-7 grid h-full grid-cols-4 grid-rows-5 place-items-center gap-x-3 gap-y-6"
+        >
+          <article
+            class="col-span-4 row-span-1 hidden bg-blue-500 md:block"
+          ></article>
+          <article
+            class="col-span-4 row-span-1 hidden h-full w-full flex-row border-b-2 pb-4 md:flex"
+          >
+            <main class="grid h-full w-full grid-cols-5 grid-rows-1">
+              <div class="flex items-center justify-center text-xl">
+                <button
+                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+                  data-tooltip="History"
+                >
+                  <span class="duration-400 grid place-items-center">
+                    <i class="fa-regular fa-clock"></i>
+                  </span>
+                </button>
+              </div>
+              <div class="flex items-center justify-center text-xl">
+                <button
+                  data-tooltip="Unite Converter"
+                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+                >
+                  <span class="duration-400 grid place-items-center">
+                    <i class="fa-regular fa-ruler-horizontal"></i>
+                  </span>
+                </button>
+              </div>
+              <div></div>
+              <div></div>
+              <div class="flex items-center justify-center text-xl">
+                <button
+                  data-delete
+                  data-tooltip="Delete"
+                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+                >
+                  <span class="duration-400 grid place-items-center">
+                    <i class="fa-regular fa-delete-left"></i>
+                  </span>
+                </button>
+              </div>
+            </main>
+          </article>
+          <article
+            class="flex flex-1 items-center justify-center text-[#DC352C]"
+          >
+            <button
+              data-all-clear
+              data-tooltip="Clear all"
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-c"></i>
+              </span>
+            </button>
+          </article>
+          <article
+            class="flex flex-1 items-center justify-center text-[#5D991F]"
+          >
+            <button
+              data-tooltip="Brackets"
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-brackets-round"></i>
+              </span>
+            </button>
+          </article>
+          <article
+            class="flex flex-1 items-center justify-center text-[#5D991F]"
+          >
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              data-tooltip="Percentage"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-percent"></i>
+              </span>
+            </button>
+          </article>
+          <article
+            class="flex flex-1 items-center justify-center text-[#5D991F]"
+          >
+            <button
+              data-tooltip="Division"
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-divide"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              data-tooltip=""
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-7"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-8"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-9"></i>
+              </span>
+            </button>
+          </article>
+          <article
+            class="flex flex-1 items-center justify-center text-[#5D991F]"
+          >
+            <button
+              data-tooltip="Multiplication"
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-times"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-4"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-5"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex-1001 flex items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-6"></i>
+              </span>
+            </button>
+          </article>
+          <article
+            class="flex flex-1 items-center justify-center text-[#5D991F]"
+          >
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              data-tooltip="Minus"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-minus"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-1"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-2"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-3"></i>
+              </span>
+            </button>
+          </article>
+          <article
+            class="flex flex-1 items-center justify-center text-[#5D991F]"
+          >
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              data-tooltip="Plus"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-plus"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex-1001 flex items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-lg">
+                <div class="flex items-center justify-center">
+                  <i class="fa-regular fa-plus"></i>
+                  <i class="fa-regular fa-slash-forward"></i>
+                  <i class="fa-regular fa-minus"></i>
+                </div>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-0"></i>
+              </span>
+            </button>
+          </article>
+          <article class="flex flex-1 items-center justify-center">
+            <button
+              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-solid fa-period"></i>
+              </span>
+            </button>
+          </article>
+          <article
+            class="flex flex-1 items-center justify-center text-[#F8F8F8]"
+          >
+            <button
+              class="aspect-square w-16 rounded-full bg-[#5D991F] transition delay-100 hover:bg-[#80d42b] active:scale-90 active:bg-[#a6e16b]"
+              data-equals
+              data-tooltip="Equal"
+              `
+            >
+              <span class="grid place-items-center text-3xl">
+                <i class="fa-regular fa-equals"></i>
+              </span>
+            </button>
+          </article>
+        </section>
+      </div>
+    </main>
   </body>
 </html>

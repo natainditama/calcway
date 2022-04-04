@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+button:active {
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+@layer components {
+  .tooltip {
+    @apply hidden rounded-2xl bg-gray-50 py-2 px-4 text-sm text-slate-800 shadow;
+  }
+
+  .arrow {
+    @apply invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['*'];
+  }
+
+  #tooltip[data-popper-placement^="top"] > .arrow {
+    @apply -bottom-2;
+  }
+
+  #tooltip[data-popper-placement^="bottom"] > .arrow {
+    @apply -top-2;
+  }
+
+  #tooltip[data-popper-placement^="left"] > .arrow {
+    @apply -right-2;
+  }
+
+  #tooltip[data-popper-placement^="right"] > .arrow {
+    @apply -left-2;
+  }
+
+  .tooltip[data-show] {
+    @apply block;
+  }
+}
