@@ -8,30 +8,34 @@ button:active {
 
 @layer components {
   .tooltip {
-    @apply hidden rounded-2xl bg-gray-50 py-2 px-4 text-sm text-slate-800 shadow;
+    @apply invisible rounded-2xl bg-slate-800 py-2 px-4 text-sm text-gray-50 opacity-0 shadow transition-opacity;
   }
 
   .arrow {
-    @apply invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['*'];
+    @apply invisible absolute m-auto h-2 w-2 bg-inherit before:visible before:absolute before:m-auto before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:opacity-0 before:transition-opacity before:duration-75 before:ease-in-out before:content-[''];
   }
 
-  #tooltip[data-popper-placement^="top"] > .arrow {
-    @apply -bottom-2;
+  .tooltip[data-popper-placement^="top"] > .arrow {
+    @apply inset-x-0 -bottom-1 before:inset-x-0;
   }
 
-  #tooltip[data-popper-placement^="bottom"] > .arrow {
-    @apply -top-2;
+  .tooltip[data-popper-placement^="bottom"] > .arrow {
+    @apply inset-x-0 -top-1 before:inset-x-0;
   }
 
-  #tooltip[data-popper-placement^="left"] > .arrow {
-    @apply -right-2;
+  .tooltip[data-popper-placement^="left"] > .arrow {
+    @apply inset-y-0 -right-1 before:inset-y-0;
   }
 
-  #tooltip[data-popper-placement^="right"] > .arrow {
-    @apply -left-2;
+  .tooltip[data-popper-placement^="right"] > .arrow {
+    @apply inset-y-0 -left-1 before:inset-y-0;
   }
 
   .tooltip[data-show] {
-    @apply block;
+    @apply visible opacity-100 transition-opacity;
+  }
+
+  .tooltip[data-show] > .arrow {
+    @apply before:opacity-100 before:transition-opacity before:duration-75;
   }
 }

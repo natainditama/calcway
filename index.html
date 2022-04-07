@@ -22,14 +22,19 @@
         <section
           class="flex h-full w-full flex-1 flex-col border-b-2 md:border-0"
         >
-          <article class="flex flex-1 flex-col bg-red-100">
+          <div class="grid flex-1 grid-cols-1 grid-rows-2 gap-6 py-4 px-8">
             <div
               data-previous-operand
-              class="flex h-1/2 w-full bg-red-500"
-            ></div>
-            <div data-current-operand></div>
-          </article>
-          <article
+              class="flex items-end justify-end text-lg md:text-2xl"
+            >
+              <span class="ml-1 h-9 w-[3px] animate-blink bg-[#80d42b]"></span>
+            </div>
+            <h1
+              data-current-operand
+              class="flex items-start justify-end text-3xl md:text-4xl"
+            ></h1>
+          </div>
+          <div
             class="col-span-4 row-span-1 flex w-full flex-row py-4 md:hidden"
           >
             <main class="grid h-full w-full grid-cols-5 grid-rows-1">
@@ -67,15 +72,13 @@
                 </button>
               </div>
             </main>
-          </article>
+          </div>
         </section>
         <section
           class="md:grid-rows-7 grid h-full grid-cols-4 grid-rows-5 place-items-center gap-x-3 gap-y-6"
         >
-          <article
-            class="col-span-4 row-span-1 hidden bg-blue-500 md:block"
-          ></article>
-          <article
+          <div class="col-span-4 row-span-1 hidden bg-blue-500 md:block"></div>
+          <div
             class="col-span-4 row-span-1 hidden h-full w-full flex-row border-b-2 pb-4 md:flex"
           >
             <main class="grid h-full w-full grid-cols-5 grid-rows-1">
@@ -113,10 +116,8 @@
                 </button>
               </div>
             </main>
-          </article>
-          <article
-            class="flex flex-1 items-center justify-center text-[#DC352C]"
-          >
+          </div>
+          <div class="flex flex-1 items-center justify-center text-[#DC352C]">
             <button
               data-all-clear
               data-tooltip="Clear all"
@@ -126,10 +127,8 @@
                 <i class="fa-regular fa-c"></i>
               </span>
             </button>
-          </article>
-          <article
-            class="flex flex-1 items-center justify-center text-[#5D991F]"
-          >
+          </div>
+          <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
               data-tooltip="Brackets"
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
@@ -138,10 +137,8 @@
                 <i class="fa-regular fa-brackets-round"></i>
               </span>
             </button>
-          </article>
-          <article
-            class="flex flex-1 items-center justify-center text-[#5D991F]"
-          >
+          </div>
+          <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
               data-tooltip="Percentage"
@@ -150,10 +147,8 @@
                 <i class="fa-regular fa-percent"></i>
               </span>
             </button>
-          </article>
-          <article
-            class="flex flex-1 items-center justify-center text-[#5D991F]"
-          >
+          </div>
+          <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
               data-tooltip="Division"
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
@@ -162,8 +157,8 @@
                 <i class="fa-regular fa-divide"></i>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               data-tooltip=""
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
@@ -172,8 +167,8 @@
                 <i class="fa-regular fa-7"></i>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -181,8 +176,8 @@
                 <i class="fa-regular fa-8"></i>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -190,10 +185,8 @@
                 <i class="fa-regular fa-9"></i>
               </span>
             </button>
-          </article>
-          <article
-            class="flex flex-1 items-center justify-center text-[#5D991F]"
-          >
+          </div>
+          <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
               data-tooltip="Multiplication"
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
@@ -202,8 +195,8 @@
                 <i class="fa-regular fa-times"></i>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -211,8 +204,8 @@
                 <i class="fa-regular fa-4"></i>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -220,8 +213,8 @@
                 <i class="fa-regular fa-5"></i>
               </span>
             </button>
-          </article>
-          <article class="flex-1001 flex items-center justify-center">
+          </div>
+          <div class="flex-1001 flex items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -229,10 +222,8 @@
                 <i class="fa-regular fa-6"></i>
               </span>
             </button>
-          </article>
-          <article
-            class="flex flex-1 items-center justify-center text-[#5D991F]"
-          >
+          </div>
+          <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
               data-tooltip="Minus"
@@ -241,8 +232,8 @@
                 <i class="fa-regular fa-minus"></i>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -250,8 +241,8 @@
                 <i class="fa-regular fa-1"></i>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -259,8 +250,8 @@
                 <i class="fa-regular fa-2"></i>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -268,10 +259,8 @@
                 <i class="fa-regular fa-3"></i>
               </span>
             </button>
-          </article>
-          <article
-            class="flex flex-1 items-center justify-center text-[#5D991F]"
-          >
+          </div>
+          <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
               data-tooltip="Plus"
@@ -280,8 +269,8 @@
                 <i class="fa-regular fa-plus"></i>
               </span>
             </button>
-          </article>
-          <article class="flex-1001 flex items-center justify-center">
+          </div>
+          <div class="flex-1001 flex items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -293,8 +282,8 @@
                 </div>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -302,8 +291,8 @@
                 <i class="fa-regular fa-0"></i>
               </span>
             </button>
-          </article>
-          <article class="flex flex-1 items-center justify-center">
+          </div>
+          <div class="flex flex-1 items-center justify-center">
             <button
               class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
             >
@@ -311,10 +300,8 @@
                 <i class="fa-solid fa-period"></i>
               </span>
             </button>
-          </article>
-          <article
-            class="flex flex-1 items-center justify-center text-[#F8F8F8]"
-          >
+          </div>
+          <div class="flex flex-1 items-center justify-center text-[#F8F8F8]">
             <button
               class="aspect-square w-16 rounded-full bg-[#5D991F] transition delay-100 hover:bg-[#80d42b] active:scale-90 active:bg-[#a6e16b]"
               data-equals
@@ -325,7 +312,7 @@
                 <i class="fa-regular fa-equals"></i>
               </span>
             </button>
-          </article>
+          </div>
         </section>
       </div>
     </main>
