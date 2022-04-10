@@ -1,10 +1,10 @@
 module.exports = {
   content: ["./index.html", "./src/*.{vue,js,ts,jsx,tsx}"],
-  darkMode: false,
   theme: {
     extend: {
       animation: {
         blink: "blink 1s linear infinite",
+        ripple: "ripple 600ms linear",
       },
       keyframes: {
         blink: {
@@ -13,6 +13,9 @@ module.exports = {
           "50%": { opacity: 1 },
           "75%": { opacity: 0 },
           "100%": { opacity: 1 },
+        },
+        ripple: {
+          to: { opacity: 0, transform: "scale(4)" },
         },
       },
     },

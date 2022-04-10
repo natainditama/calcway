@@ -2,8 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Modern Calculator App by natainditama" />
     <link
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css"
@@ -12,17 +13,16 @@
     <title>Calcway - Modern Calculator App by natainditama</title>
   </head>
 
-  <body class="bg-[#fcfcfc] text-slate-800">
+  <body class="bg-gray-50 text-slate-800">
     <main
-      class="relative mx-auto block h-screen max-w-4xl py-12 px-6 2xl:grid 2xl:place-items-center"
+      class="relative mx-auto block min-h-screen max-w-4xl py-12 px-6 2xl:grid 2xl:place-items-center"
     >
-      <div
-        class="grid h-full grid-cols-1 grid-rows-2 gap-8 sm:grid-cols-2 sm:grid-rows-1 2xl:max-h-[615px]"
-      >
-        <section
-          class="flex h-full w-full flex-1 flex-col border-b-2 md:border-0"
-        >
-          <div class="grid flex-1 grid-cols-1 grid-rows-2 gap-6 py-4 px-8">
+      <nav class="relative mx-auto mb-4 w-full px-4">
+        <div class="flex items-center justify-between">
+          <a href="index.html">
+            <img src="/assets/images/logo.png" alt="Calcway" class="h-16" />
+          </a>
+          <div class="grid flex-1 grid-cols-1 grid-rows-2 gap-6">
             <div
               data-previous-operand
               class="flex items-end justify-end text-lg md:text-2xl"
@@ -31,60 +31,50 @@
             </div>
             <h1
               data-current-operand
-              class="flex items-start justify-end text-3xl md:text-4xl"
-            ></h1>
+              class="flex items-start justify-end text-3xl"
+              >adjaodj</h1
+            >
           </div>
-          <div
-            class="col-span-4 row-span-1 flex w-full flex-row py-4 md:hidden"
-          >
-            <main class="grid h-full w-full grid-cols-5 grid-rows-1">
-              <div class="flex items-center justify-center text-xl">
-                <button
-                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
-                  data-tooltip="History"
-                >
-                  <span class="duration-400 grid place-items-center">
-                    <i class="fa-regular fa-clock"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="flex items-center justify-center text-xl">
-                <button
-                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
-                  data-tooltip="Unite Converter"
-                >
-                  <span class="duration-400 grid place-items-center">
-                    <i class="fa-regular fa-ruler-horizontal"></i>
-                  </span>
-                </button>
-              </div>
-              <div></div>
-              <div></div>
-              <div class="flex items-center justify-center text-xl">
-                <button
-                  data-delete
-                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
-                  data-tooltip="Delete"
-                >
-                  <span class="duration-400 grid place-items-center">
-                    <i class="fa-regular fa-delete-left"></i>
-                  </span>
-                </button>
-              </div>
-            </main>
+        </div>
+      </nav>
+
+      <div
+        class="grid h-full grid-cols-1 grid-rows-2 gap-8 sm:grid-cols-2 sm:grid-rows-1 2xl:max-h-[615px]"
+      >
+        <section class="flex h-full w-full flex-1 flex-col">
+          <div class="flex items-center justify-between py-4">
+            <h1 class="text-2xl font-bold">History</h1>
+            <button
+              type="button"
+              class="rounded-lg bg-red-700 py-2.5 px-5 text-white transition-colors hover:bg-red-800 focus:outline-none dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+              ><span class="font-bold uppercase text-white">Clear</span></button
+            >
           </div>
+          <ul class="flex flex-1 flex-col">
+            <li class="flex items-center justify-end overflow-hidden py-2">
+              <button
+                data-ripple
+                class="relative flex flex-1 items-end justify-between overflow-hidden rounded-md py-2 px-4"
+              >
+                <small class="font-xs">Jan, 18 2022</small>
+                <div class="flex flex-col items-end">
+                  <span class="text-lg font-medium">30 + 5</span>
+                  <span class="text-2xl font-medium">35</span>
+                </div>
+              </button>
+            </li>
+          </ul>
         </section>
         <section
           class="md:grid-rows-7 grid h-full grid-cols-4 grid-rows-5 place-items-center gap-x-3 gap-y-6"
         >
-          <div class="col-span-4 row-span-1 hidden bg-blue-500 md:block"></div>
           <div
-            class="col-span-4 row-span-1 hidden h-full w-full flex-row border-b-2 pb-4 md:flex"
+            class="items-cente col-span-4 row-span-1 flex h-full w-full flex-row"
           >
             <main class="grid h-full w-full grid-cols-5 grid-rows-1">
               <div class="flex items-center justify-center text-xl">
                 <button
-                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
                   data-tooltip="History"
                 >
                   <span class="duration-400 grid place-items-center">
@@ -95,7 +85,7 @@
               <div class="flex items-center justify-center text-xl">
                 <button
                   data-tooltip="Unite Converter"
-                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
                 >
                   <span class="duration-400 grid place-items-center">
                     <i class="fa-regular fa-ruler-horizontal"></i>
@@ -108,7 +98,7 @@
                 <button
                   data-delete
                   data-tooltip="Delete"
-                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+                  class="aspect-square w-10 rounded-full transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
                 >
                   <span class="duration-400 grid place-items-center">
                     <i class="fa-regular fa-delete-left"></i>
@@ -121,7 +111,7 @@
             <button
               data-all-clear
               data-tooltip="Clear all"
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-c"></i>
@@ -131,7 +121,7 @@
           <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
               data-tooltip="Brackets"
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-brackets-round"></i>
@@ -140,7 +130,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
               data-tooltip="Percentage"
             >
               <span class="grid place-items-center text-3xl">
@@ -151,7 +141,7 @@
           <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
               data-tooltip="Division"
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-divide"></i>
@@ -161,7 +151,7 @@
           <div class="flex flex-1 items-center justify-center">
             <button
               data-tooltip=""
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-7"></i>
@@ -170,7 +160,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-8"></i>
@@ -179,7 +169,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-9"></i>
@@ -189,7 +179,7 @@
           <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
               data-tooltip="Multiplication"
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-times"></i>
@@ -198,7 +188,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-4"></i>
@@ -207,7 +197,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-5"></i>
@@ -216,7 +206,7 @@
           </div>
           <div class="flex-1001 flex items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-6"></i>
@@ -225,7 +215,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
               data-tooltip="Minus"
             >
               <span class="grid place-items-center text-3xl">
@@ -235,7 +225,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-1"></i>
@@ -244,7 +234,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-2"></i>
@@ -253,7 +243,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-3"></i>
@@ -262,7 +252,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center text-[#5D991F]">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
               data-tooltip="Plus"
             >
               <span class="grid place-items-center text-3xl">
@@ -272,7 +262,7 @@
           </div>
           <div class="flex-1001 flex items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-lg">
                 <div class="flex items-center justify-center">
@@ -285,7 +275,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-regular fa-0"></i>
@@ -294,7 +284,7 @@
           </div>
           <div class="flex flex-1 items-center justify-center">
             <button
-              class="aspect-square w-16 rounded-full bg-[#F8F8F8] transition delay-100 hover:bg-[#e6e6e6] active:scale-90 active:bg-[#cccccc]"
+              class="aspect-square w-16 rounded-full bg-gray-100 transition delay-100 hover:bg-neutral-200 active:scale-90 active:bg-stone-300"
             >
               <span class="grid place-items-center text-3xl">
                 <i class="fa-solid fa-period"></i>

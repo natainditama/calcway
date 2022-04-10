@@ -31,11 +31,16 @@ button:active {
     @apply inset-y-0 -left-1 before:inset-y-0;
   }
 
-  .tooltip[data-show] {
+  .tooltip.show {
     @apply visible opacity-100 transition-opacity;
   }
 
-  .tooltip[data-show] > .arrow {
-    @apply before:opacity-100 before:transition-opacity before:duration-75;
+  .tooltip.show .arrow {
+    @apply duration-75 before:opacity-100 before:transition-opacity;
+  }
+
+  .ripple {
+    @apply absolute animate-ripple rounded-full bg-stone-300;
+    transform: scale(0);
   }
 }
