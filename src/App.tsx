@@ -1,34 +1,50 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React from "react";
+import { useState } from "react";
+import { GlobalStyles } from "@/styles/global";
+import { useEffect } from "react";
+import { ThemeProvider } from "styled-components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { basic, ThemeProps } from "@/styles/theme";
+import { Header, Calculator } from "@/components";
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function App() {
+  const [selectedTheme, setSelectedTheme] = useState<ThemeProps>(basic);
+
+  const HandleThemeChange = (theme: ThemeProps) => {
+    setSelectedTheme(theme);
+    toggleActiveTheme(theme);
+    localStorage.setItem("current-theme", JSON.stringify(theme));
+  };
+
+  function toggleActiveTheme(theme: ThemeProps) {
+    const themeBtns = document.querySelectorAll(".theme-btn");
+    themeBtns.forEach((themeBtn) => {
+      if (themeBtn.classList.contains(theme.name)) {
+        themeBtn.classList.add("active");
+      } else {
+        themeBtn.classList.remove("active");
+      }
+    });
+  }
+
+  useEffect(() => {
+    const currentTheme = JSON.parse(localStorage.getItem("current-theme") as string);
+
+    if (currentTheme) {
+      setSelectedTheme(currentTheme);
+      toggleActiveTheme(currentTheme);
+    }
+  }, []);
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    <ThemeProvider theme={selectedTheme}>
+      <GlobalStyles />
+      <BrowserRouter>
+        <Header HandleThemeChange={HandleThemeChange} />
+        <Routes>
+          <Route path="/" element={<Calculator />} />
+        </Routes>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
 }
-
-export default App
