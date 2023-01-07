@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import { GlobalStyles } from "@/styles/global";
 import { ThemeProvider } from "styled-components";
 import { basic, ThemeProps } from "@/styles/theme";
-import { Header, Calculator } from "@/components";
+import { Header, Calculator, DefaultSeo } from "@/components";
 
 export default function App() {
   const [selectedTheme, setSelectedTheme] = useState<ThemeProps>(basic);
@@ -36,6 +36,7 @@ export default function App() {
   return (
     <ThemeProvider theme={selectedTheme}>
       <GlobalStyles />
+      <DefaultSeo />
       <Header handleThemeChange={handleThemeChange} />
       <Calculator />
     </ThemeProvider>
