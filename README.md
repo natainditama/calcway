@@ -14,20 +14,18 @@ Removed sections:
 - Running Test
 - Deployment
 - FAQ
+- Acknowledgements
 -->
 
 <div align="center">
-
   <h1>Calcway</h1>
-  
   <p>
     Stunning calculator app website built with React
   </p>
 
-  
 <!-- Badges -->
 <p>
-  <a href="https://github.com/natainditama/calcway/graphs/contributors">
+  <a href="https://github.com/natainditama/calcwaycalcway/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/natainditama/calcway" alt="contributors" />
   </a>
   <a href="">
@@ -48,7 +46,7 @@ Removed sections:
 </p>
    
 <h4>
-    <a href="https://calcway.pages.dev/">View Demo</a>
+    <a href="https://github.com/natainditama/calcway/">View Demo</a>
   <span> · </span>
     <a href="https://github.com/natainditama/calcway">Documentation</a>
   <span> · </span>
@@ -60,114 +58,38 @@ Removed sections:
 
 <br />
 
-  
-<!-- About the Project -->
-## :star2: About the Project
-
 <div align="center"> 
-  <img src="./design/desktop-design-theme-2.jpg" alt="screenshot" />
+  <img src="https://github.com/natainditama/calcway/raw/main/design/desktop-design-theme-2.jpg" alt="screenshot" />
 </div>
 
+<br />
 
-<!-- TechStack -->
-### :space_invader: Tech Stack
-
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://nextjs.org/">Next.js</a></li>
-    <li><a href="https://reactjs.org/">React.js</a></li>
-    <li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-  </ul>
-</details>
-
-<details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-    <li><a href="https://go.dev/">Golang</a></li>
-    <li><a href="https://nestjs.com/">Nest.js</a></li>
-    <li><a href="https://socket.io/">SocketIO</a></li>
-    <li><a href="https://www.prisma.io/">Prisma</a></li>    
-    <li><a href="https://www.apollographql.com/">Apollo</a></li>
-    <li><a href="https://graphql.org/">GraphQL</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.mysql.com/">MySQL</a></li>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-    <li><a href="https://redis.io/">Redis</a></li>
-    <li><a href="https://neo4j.com/">Neo4j</a></li>
-    <li><a href="https://www.mongodb.com/">MongoDB</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>DevOps</summary>
-  <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
-    <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
-  </ul>
-</details>
-
-<!-- Features -->
-### :dart: Features
-
-- Feature 1
-- Feature 2
-- Feature 3
+<!-- About the Project -->
+## About the Project
 
 <!-- Color Reference -->
-### :art: Color Reference
+### Color Reference
 
 | Color             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
+| Primary Color | ![#377f86](https://via.placeholder.com/10/377f86?text=+) #377f86 |
+| Secondary Color | ![#ca5502](https://via.placeholder.com/10/ca5502?text=+) #ca5502 |
+| Background Color | ![#e6e6e6](https://via.placeholder.com/10/e6e6e6?text=+) #e6e6e6 |
+| Text Color | ![#333333](https://via.placeholder.com/10/333333?text=+) #333333 |
 
+<!-- Features -->
+### Features
 
-<!-- Env Variables -->
-### :key: Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
+- Responsive Design
+- User-Friendly Interface
+- Customization Options
+- Keyboard Support
 
 <!-- Getting Started -->
-## 	:toolbox: Getting Started
-
-<!-- Prerequisites -->
-### :bangbang: Prerequisites
-
-This project uses Yarn as package manager
-
-```bash
- npm install --global yarn
-```
-
-<!-- Installation -->
-### :gear: Installation
-
-Install my-project with npm
-
-```bash
-  yarn install my-project
-  cd my-project
-```
-
+## 	Getting Started
 
 <!-- Run Locally -->
-### :running: Run Locally
+### Run Locally
 
 Clone the project
 
@@ -178,67 +100,45 @@ Clone the project
 Go to the project directory
 
 ```bash
-  cd my-project
+  cd calcway
 ```
 
 Install dependencies
 
 ```bash
-  yarn install
+  npm install
 ```
 
-Start the server
+Start the local server
 
 ```bash
-  yarn start
+  npm run dev
 ```
 
-
-<!-- Roadmap -->
-## :compass: Roadmap
-
-* [x] Todo 1
-* [ ] Todo 2
-
 <!-- Contributing -->
-## :wave: Contributing
+## Contributing
 
 <a href="https://github.com/natainditama/calcway/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=natainditama/calcway" />
-</a>
-
+</a><br /><br />
 
 Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
-
-
-<!-- Code of Conduct -->
-### :scroll: Code of Conduct
-
-Please read the [Code of Conduct](https://github.com/natainditama/calcway/blob/master/CODE_OF_CONDUCT.md)
-
-
 <!-- License -->
-## :warning: License
+## License
 
 Distributed under the no License. See LICENSE.txt for more information.
 
-
 <!-- Contact -->
-## :handshake: Contact
+## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email@email_client.com
+Nata Inditama - [@natainditama](https://t.me/natainditama) - natainditama.dev@gmail.com
 
 Project Link: [https://github.com/natainditama/calcway](https://github.com/natainditama/calcway)
 
-<!-- Acknowledgments -->
-## :gem: Acknowledgements
+<!-- Acknowledgements -->
+## Acknowledgements
 
-Use this section to mention useful resources and libraries that you have used in your projects.
-
- - [Shields.io](https://shields.io/)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [Emoji Cheat Sheet](https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md#travel--places)
- - [Readme Template](https://github.com/othneildrew/Best-README-Template)
-
+- [Vite](https://vitejs.dev/)
+- [Frontendmentor](https://www.frontendmentor.io/)
+- [React](https://react.dev/)
