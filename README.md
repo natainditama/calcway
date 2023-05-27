@@ -21,7 +21,7 @@ Removed sections:
   <h1>Calcway</h1>
   
   <p>
-    Beautiful calculator app website built with React
+    Stunning calculator app website built with React
   </p>
 
   
