@@ -140,5 +140,5 @@ Project Link: [https://github.com/natainditama/calcway](https://github.com/natai
 ## Acknowledgements
 
 - [Vite](https://vitejs.dev/)
-- [Frontendmentor](https://www.frontendmentor.io/)
+- [Frontend Mentor](https://www.frontendmentor.io/)
 - [React](https://react.dev/)
