@@ -12,7 +12,6 @@
     content="Experience the elegance of a stunning calculator app website, crafted with React, offering a seamless and visually captivating user interface for effortless mathematical calculations">
     <link rel="canonical" href="https://calcway.pages.dev/">
     <link rel="shortcut icon" href="/vite.svg">
-    <link rel="manifest" href="/manifest.json">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -39,7 +38,11 @@
       rel="stylesheet">
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <noscript>
+        <h1>Calcway</h1>
+      </noscript>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
