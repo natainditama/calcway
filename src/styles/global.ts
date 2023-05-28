@@ -7,7 +7,7 @@ type GlobalThemeProps = {
 
 export const GlobalStyles = createGlobalStyle`
 :root {
-  --main-font: "League Spartan", sans-serif;
+  --main-font: "Inter", sans-serif;
 }
 * {
   margin: 0;

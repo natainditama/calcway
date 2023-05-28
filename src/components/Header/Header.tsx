@@ -9,7 +9,7 @@ type HeaderProps = {
 function Header({ handleThemeChange }: HeaderProps) {
   return (
     <header>
-      <h1>calcway</h1>
+      <h1>Calcway</h1>
       <section className="themes">
         <p>THEME</p>
         <ThemeButtons handleThemeChange={handleThemeChange} />

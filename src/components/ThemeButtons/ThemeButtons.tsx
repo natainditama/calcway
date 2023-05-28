@@ -36,7 +36,7 @@ export default function ThemeButtons({ handleThemeChange }: ThemeButtonsProps) {
               type={"button"}
               id={theme.name}
               key={theme.name}
-              className={`theme-btn ${theme.name} ${index == 0 ? "active" : null}`}
+              className={`theme-btn ${theme.name} ${index == 1 ? "active" : null}`}
               onClick={() => handleThemeChange(theme)}
             ></ThemeButton>
           );

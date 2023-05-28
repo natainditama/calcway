@@ -51,12 +51,12 @@ const metaTags = [
   {
     name: "keywords",
     content:
-      "calcway, react, javascript, html, calculator, typescript, html5, reactjs, project, free, html-css, html-css-javascript, javascipt, calculator-application, calculator-javascript, calculator-app, vite, react-typescript, vitejs, natainditama, vite-ts, react-ts, typescript, calculator-ts",
+      "Stunning calculator, App website, React, Elegant design, Seamless user interface, Mathematical calculations, Web application, Calculator app, React framework, Beautiful UI, User-friendly calculator, Advanced calculations, Responsive design, Interactive interface, Front-end development, Modern calculator, Efficient calculations, Interactive user experience, Customizable calculator, React components.",
   },
   {
     name: "description",
     content:
-      "Beautiful Online Calculator with 11-digit keypad and 4 functions to add, subtract, multiply and divide numbers.",
+      "Experience the elegance of a stunning calculator app website, crafted with React, offering a seamless and visually captivating user interface for effortless mathematical calculations",
   },
 ];
 
@@ -95,7 +95,7 @@ const linkTags = [
 
 const seoDefaults: HelmetProps = {
   titleTemplate: "Calcway - %s",
-  title: "Beautiful a simple calculator website build with React",
+  title: "Stunning calculator app website built with React",
   link: [...linkTags],
   meta: [...metaTags],
 };
