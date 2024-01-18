@@ -20,7 +20,7 @@ Removed sections:
 <div align="center">
   <h1>Calcway</h1>
   <p>
-    Stunning calculator app website built with React
+    Simple calculator application built with React
   </p>
 
 <!-- Badges -->
