@@ -1,57 +1,42 @@
-<!--
-Hey, thanks for using the awesome-readme-template template.  
-If you have any enhancements, then fork this project and create a pull request 
-or just open an issue with the label "enhancement".
-
-Don't forget to give this project a star for additional support ;)
-Maybe you can mention me or this repo in the acknowledgements too
--->
-
-<!--
-This README is a slimmed down version of the original one.
-Removed sections:
-- Screenshots
-- Running Test
-- Deployment
-- FAQ
-- Acknowledgements
--->
-
 <div align="center">
-  <h1>Calcway</h1>
+
+  <h1>Calcway</h1>  
   <p>
-    Simple calculator application built with React
+    Simple calculator application built with React 
   </p>
 
 <!-- Badges -->
 <p>
-  <a href="https://github.com/natainditama/calcwaycalcway/graphs/contributors">
+  <a href="https://github.com/natainditama/calcway/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/natainditama/calcway" alt="contributors" />
-  </a>
-  <a href="">
-    <img src="https://img.shields.io/github/last-commit/natainditama/calcway" alt="last update" />
-  </a>
-  <a href="https://github.com/natainditama/calcway/network/members">
-    <img src="https://img.shields.io/github/forks/natainditama/calcway" alt="forks" />
-  </a>
-  <a href="https://github.com/natainditama/calcway/stargazers">
-    <img src="https://img.shields.io/github/stars/natainditama/calcway" alt="stars" />
   </a>
   <a href="https://github.com/natainditama/calcway/issues/">
     <img src="https://img.shields.io/github/issues/natainditama/calcway" alt="open issues" />
   </a>
+  <a href="https://github.com/natainditama/calcway/network/members">
+    <img src="https://badgen.net/github/forks/natainditama/calcway" alt="forks" />
+  </a>
+  <a href="https://github.com/natainditama/calcway/graphs/commit-activity">
+    <img src="https://badgen.net/github/commits/natainditama/calcway" alt="commits count" />
+  </a>
+  <a href="https://github.com/natainditama/calcway/stargazers">
+    <img src="https://badgen.net/github/stars/natainditama/calcway" alt="stars" />
+  </a>
   <a href="https://github.com/natainditama/calcway/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/natainditama/calcway.svg" alt="license" />
   </a>
+  <a href="https://github.com/natainditama/calcway">
+    <img src="https://img.shields.io/github/last-commit/natainditama/calcway" alt="last update" />
+  </a>
 </p>
    
-<h4>
+  <h4>
     <a href="https://github.com/natainditama/calcway/">View Demo</a>
-  <span> · </span>
+    <span> · </span>
     <a href="https://github.com/natainditama/calcway">Documentation</a>
-  <span> · </span>
+    <span> · </span>
     <a href="https://github.com/natainditama/calcway/issues/">Report Bug</a>
-  <span> · </span>
+    <span> · </span>
     <a href="https://github.com/natainditama/calcway/issues/">Request Feature</a>
   </h4>
 </div>
@@ -59,37 +44,46 @@ Removed sections:
 <br />
 
 <div align="center"> 
-  <img src="https://github.com/natainditama/calcway/raw/main/design/desktop-design-theme-2.jpg" alt="screenshot" />
+  <img src="design/desktop-design-theme-2.jpg" alt="screenshot" />
 </div>
 
 <br />
 
 <!-- About the Project -->
-## About the Project
-
-<!-- Color Reference -->
-### Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#377f86](https://via.placeholder.com/10/377f86?text=+) #377f86 |
-| Secondary Color | ![#ca5502](https://via.placeholder.com/10/ca5502?text=+) #ca5502 |
-| Background Color | ![#e6e6e6](https://via.placeholder.com/10/e6e6e6?text=+) #e6e6e6 |
-| Text Color | ![#333333](https://via.placeholder.com/10/333333?text=+) #333333 |
+## 📝 About the Project
 
 <!-- Features -->
-### Features
+### 🌟 Features
+
+This project includes the following features:
 
 - Responsive Design
 - User-Friendly Interface
 - Customization Options
 - Keyboard Support
+- 
+
+<!-- Color Reference -->
+### 🎨 Color Reference
+
+| Color            | Hex                                                              |
+| ---------------- | ---------------------------------------------------------------- |
+| Primary Color    | ![#377f86](https://via.placeholder.com/10/377f86?text=+) #377f86 |
+| Secondary Color  | ![#ca5502](https://via.placeholder.com/10/ca5502?text=+) #ca5502 |
+| Background Color | ![#e6e6e6](https://via.placeholder.com/10/e6e6e6?text=+) #e6e6e6 |
+| Text Color       | ![#333333](https://via.placeholder.com/10/333333?text=+) #333333 |
 
 <!-- Getting Started -->
-## 	Getting Started
+## 🚀 Getting Started
+
+<!-- Prerequisites -->
+### 🔧 Prerequisites
+
+- [Node.js](http://nodejs.org/)
+- [Yarn](https://yarnpkg.com/)
 
 <!-- Run Locally -->
-### Run Locally
+### 🏃 Run Locally
 
 Clone the project
 
@@ -106,39 +100,39 @@ Go to the project directory
 Install dependencies
 
 ```bash
-  npm install
+  yarn
 ```
 
-Start the local server
+Start the server
 
 ```bash
-  npm run dev
+  yarn start
 ```
 
 <!-- Contributing -->
-## Contributing
+## 👋 Contributing
 
 <a href="https://github.com/natainditama/calcway/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=natainditama/calcway" />
-</a><br /><br />
+</a><br/>
 
 Contributions are always welcome!
 
-<!-- License -->
-## License
+See [contributing.md](https://github.com/natainditama/calcway/blob/main/.github/CONTRIBUTING.md) for ways to get started.
 
-Distributed under the no License. See LICENSE.txt for more information.
+<!-- License -->
+## ⚠️ License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/natainditama/calcway/blob/main/LICENSE) file for details
 
 <!-- Contact -->
-## Contact
-
-Nata Inditama - [@natainditama](https://t.me/natainditama) - natainditama.dev@gmail.com
+## 🤝 Contact
+Nata Inditama - [natainditama](https://linkedin.com/in/natainditama/) - natainditama.dev@gmail.com
 
 Project Link: [https://github.com/natainditama/calcway](https://github.com/natainditama/calcway)
 
-<!-- Acknowledgements -->
-## Acknowledgements
+<!-- Resources -->
+## 📚 Resources
 
-- [Vite](https://vitejs.dev/)
-- [Frontend Mentor](https://www.frontendmentor.io/)
-- [React](https://react.dev/)
+- [Frontend Mentor](hhttps://www.frontendmentor.io)
+
