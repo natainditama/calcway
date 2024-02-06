@@ -23,6 +23,6 @@
     "@vitejs/plugin-react": "^4.0.0",
     "typescript": "^5.0.4",
     "vite": "^4.4.12",
-    "vite-plugin-pwa": "^0.15.1"
+    "vite-plugin-pwa": "^0.17.0"
   }
 }
