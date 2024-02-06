@@ -54,7 +54,7 @@ jobs:
       - name: Build with vite
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} vite build \
-            --base "/${{ steps.pages.outputs.base_path }}"
+            --base "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
