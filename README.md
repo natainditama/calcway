@@ -44,7 +44,7 @@
 <br />
 
 <div align="center"> 
-  <img src="design/desktop-design-theme-2.jpg" alt="screenshot" />
+  <img src=".github/screenshot.png" alt="screenshot" />
 </div>
 
 <br />
@@ -57,11 +57,11 @@
 
 This project includes the following features:
 
-- Responsive Design
-- User-Friendly Interface
-- Customization Options
-- Keyboard Support
-- 
+- Responsive design
+- User-friendly interface
+- Customization themes
+- Keyboard support
+- Basic calculations 
 
 <!-- Color Reference -->
 ### 🎨 Color Reference
@@ -134,5 +134,5 @@ Project Link: [https://github.com/natainditama/calcway](https://github.com/natai
 <!-- Resources -->
 ## 📚 Resources
 
-- [Frontend Mentor](hhttps://www.frontendmentor.io)
+- [Frontend Mentor](https://www.frontendmentor.io)
 
