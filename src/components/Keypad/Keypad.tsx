@@ -8,7 +8,7 @@ export type KeypadProps = {
   onKeyDown: (event: KeyboardEvent) => void;
 };
 
-function Keypad({ updateCalc, deleteCalc, clear, calculate}: KeypadProps) {
+function Keypad({ updateCalc, deleteCalc, clear, calculate }: KeypadProps) {
   return (
     <section className="keypad">
       <button
@@ -68,7 +68,12 @@ function Keypad({ updateCalc, deleteCalc, clear, calculate}: KeypadProps) {
       <button className="reset" id="reset-key" value="reset" onClick={clear}>
         RESET
       </button>
-      <button className="equals-key" id="equals-key" value="=" onClick={calculate}>
+      <button
+        className="equals-key"
+        id="equals-key"
+        value="="
+        onClick={calculate}
+      >
         =
       </button>
     </section>

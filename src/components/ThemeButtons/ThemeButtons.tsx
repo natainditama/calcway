@@ -22,7 +22,11 @@ export default function ThemeButtons({ handleThemeChange }: ThemeButtonsProps) {
       <section className="theme-number">
         {themes.map(function (theme: ThemeProps, index: number) {
           return (
-            <label htmlFor={theme.name} className="theme-number" key={theme.name}>
+            <label
+              htmlFor={theme.name}
+              className="theme-number"
+              key={theme.name}
+            >
               {index + 1}
             </label>
           );
